@@ -96,9 +96,13 @@ def main():
     print("Todos os dados recebido!")
         
     # Criação do DataFrame com os dados do dicionario    
-    df = pd.DataFrame(data).transpose().set_index('movie_rank')           
-    print(df)
+    df = pd.DataFrame(data).transpose()
 
+    # alterando a coluna index
+    df.reset_index(drop=True, inplace=True)
+
+    # exibindo DataFrame
+    print(df)
 
     # Criação do arquivo JSON
     create_json_file(data)
