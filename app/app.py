@@ -5,6 +5,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+from unidecode import unidecode
+import json
 
 def setup_browser():
 
