@@ -59,6 +59,14 @@ def main():
             
         # nome do filme
         movie_name = movie_data[1].find('a').text
+
+        # ano do filme
+        movie_year = movie_data[1].find('span').text
+
+        # removendo os caracteres ( ) do ano 
+        char_remov = ['(', ')']
+        for char in char_remov:
+            movie_year = movie_year.replace(char, '')
             
         # avaliação imdb
         movie_imdb_rating = movie_data[2].text.replace('\n', '')
@@ -75,6 +83,8 @@ def main():
             'movie_rank': movie_rank,
                 
             'movie_name': movie_name,
+
+            'movie_year': movie_year,
                 
             'movie_imdb_rating': movie_imdb_rating,
                 
