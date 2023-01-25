@@ -5,6 +5,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
+from unidecode import unidecode
+import json
 
 def setup_browser():
 
@@ -90,6 +92,10 @@ def main():
 
     # Criação do arquivo JSON
     create_json_file(data)
+
+    # Criação do arquivo CSV
+    df.to_csv('movies.csv', index=False)
+
 
 if __name__ == "__main__":
     main()
