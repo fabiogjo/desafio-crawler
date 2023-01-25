@@ -18,6 +18,10 @@ def setup_browser():
 
     return browser
 
+def create_json_file(dictionary):
+    with open("movies.json", "w") as outfile:
+        json.dump(dictionary, outfile, indent = 4)
+
 def main():
     
     #definindo url
@@ -59,9 +63,12 @@ def main():
             
         # pegando o scr do poster do filme
         movie_img_scr = movie_data[0].find('img')['src']
+
+        # Removendo acentuação e letras maiusculas para ser a chave do dicionario
+        movie_key = unidecode(movie_name.lower())
             
         # criando um dict com os dados do filme
-        data[movie_name] = {
+        data[movie_key] = {
                 
             'movie_rank': movie_rank,
                 
@@ -77,11 +84,12 @@ def main():
     print("Todos os dados recebido!")
         
     # Criação do DataFrame com os dados do dicionario    
-    df = pd.DataFrame(data).transpose().set_index('movie_rank')
-            
+    df = pd.DataFrame(data).transpose().set_index('movie_rank')           
     print(df)
 
-    
+
+    # Criação do arquivo JSON
+    create_json_file(data)
 
 if __name__ == "__main__":
     main()
