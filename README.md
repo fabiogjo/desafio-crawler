@@ -10,15 +10,15 @@ Escolher uma dos sites abaixo para fazer o desafio
 
 ### Minimo Entregável:
 
-- Buscar dados de forma automatizada(script de linha de comando ou interface clicavel)
-- Padronizar os retornos de forma estruturada (json/csv)
-- Sistema de logs de para acompanhamento da execução
-- Ter um prova da consulta (Screenshot)
+- ~~Buscar dados de forma automatizada(script de linha de comando ou interface clicavel)~~
+- ~~Padronizar os retornos de forma estruturada (json/csv)~~
+- ~~Sistema de logs de para acompanhamento da execução~~
+- ~~Ter um prova da consulta (Screenshot)~~
 
 ### Pontos Extra para:
 
 - Armazenamento dos resultados em um banco relacional ou não relacional
-- fazer um dataframe que possibilite visualizar os resultados via pandas
+- ~~fazer um dataframe que possibilite visualizar os resultados via pandas~~
 - Trazer resultados de forma dinamica sem fixar caminhos no `xpath`
 - Dockerizar a aplicação
 - Conseguir agendar uma execução para um dia e horario.

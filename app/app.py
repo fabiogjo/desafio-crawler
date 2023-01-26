@@ -9,6 +9,7 @@ from unidecode import unidecode
 import json
 import logging
 
+#Configurações logging
 logging.basicConfig(level=logging.INFO, encoding='utf-8', filename='generated_files/logs.log', format="%(asctime)s - %(levelname)s - %(message)s")
 
 
@@ -24,46 +25,15 @@ def setup_browser():
 
     return browser
 
+
 def create_json_file(dictionary):
     with open("generated_files/json_movies.json", "w") as outfile:
         json.dump(dictionary, outfile, indent = 4)
-        
 
-def main():
 
-    logging.info('Iniciando execução.')
+def create_movies_dict(data, movies_array):
     
-    #definindo url
-    url = 'https://www.imdb.com/chart/top/?ref_=nv_mv_250'
-    
-    #iniciando dict dos dados
-    data = dict()
-    
-    # acessando a pagina
-    r = requests.get(url)
-    logging.info('Tentando conexão com URL.')
-    
-    # return early caso houver algum problema para acessar a URL
-    if r.status_code != 200:
-        logging.warning("URL não acessivel")
-        return
-
-    logging.info('URL conectada com sucesso.')
-    
-    # selecionando tabela a ser trabalhada
-    content = r.content
-        
-    soup = BeautifulSoup(content, 'html.parser')
-        
-    table = soup.find('tbody', {'class': 'lister-list'})
-
-    if not table:
-        logging.fatal('Tabela com a class "Lister-list" não encontrada.')
-        return
-        
-    all_movies = table.find_all('tr')
-        
-    for row in all_movies:
+    for row in movies_array:
             
         # pegando valores da linha
         movie_data = row.find_all('td')
@@ -133,8 +103,56 @@ def main():
             'movie_img_scr': movie_img_scr
                 
         }
-            
+        
         logging.info(f'Filme "{movie_name}" cadastrado com sucesso.')
+
+
+def get_screenshot(url, path):
+    
+    browser = setup_browser()
+
+    browser.get(url)
+
+    browser.save_screenshot(path)
+
+    browser.quit 
+    
+    
+def main():
+
+    logging.info('Iniciando execução.')
+    
+    #definindo url
+    url = 'https://www.imdb.com/chart/top/?ref_=nv_mv_250'
+    
+    #iniciando dict dos dados
+    data = dict()
+    
+    # acessando a pagina
+    r = requests.get(url)
+    logging.info('Tentando conexão com URL.')
+    
+    # return early caso houver algum problema para acessar a URL
+    if r.status_code != 200:
+        logging.warning("URL não acessivel")
+        return
+
+    logging.info('URL conectada com sucesso.')
+    
+    # selecionando tabela a ser trabalhada
+    content = r.content      
+    soup = BeautifulSoup(content, 'html.parser')    
+    table = soup.find('tbody', {'class': 'lister-list'})
+
+    if not table:
+        logging.fatal('Tabela com a class "Lister-list" não encontrada.')
+        return
+    
+    # selecionando todas as linhas da tabela
+    all_movies = table.find_all('tr')
+    
+    # Gerando dicionario dos filmes passando a variavel a ser armazenados os dados e o array de linhas da tabela
+    create_movies_dict(data, all_movies)
     
     # verificando se o dicionario dos filmes esta vazio
     if not data:
@@ -163,23 +181,15 @@ def main():
     logging.info('Arquivo JSON Gerado com sucesso')
 
     # Retorno JSON
-    result = df.to_json(orient = "records", indent = 4)
+    result = df.to_json(orient = "records")
     print(result)
 
     # Criação do arquivo CSV
     df.to_csv('generated_files/csv_movies.csv', index=False)
     logging.info('Arquivo CSV Gerado com sucesso')
 
-
     # Prova de consulta
-    browser = setup_browser()
-
-    browser.get(url)
-
-    browser.save_screenshot('generated_files/prova_de_consulta.png')
-
-    browser.quit
-
+    get_screenshot(url, 'generated_files/prova_de_consulta.png')
 
     # Final de execução
     logging.info('Execução Completa')
