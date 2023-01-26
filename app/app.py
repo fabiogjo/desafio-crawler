@@ -8,6 +8,9 @@ from bs4 import BeautifulSoup
 from unidecode import unidecode
 import json
 import logging
+import schedule
+import time
+import datetime
 
 #Configurações logging
 logging.basicConfig(level=logging.INFO, encoding='utf-8', filename='generated_files/logs.log', format="%(asctime)s - %(levelname)s - %(message)s")
@@ -116,6 +119,22 @@ def get_screenshot(url, path):
     browser.save_screenshot(path)
 
     browser.quit 
+
+
+def get_schedule():
+    
+    # pega o input do usuário para o dia
+    input_day = input("Insira uma data para a execução do script (DD/MM/YYYY): ")
+    
+    # pega o input do usuário para a hora
+    input_time = input("Insira uma hora para a execução do script (HH:MM): ")
+    
+    # converte o input do usuário em um objeto datetime
+    scheduled_date = datetime.datetime.strptime(input_day, "%d/%m/%Y")
+    scheduled_time = datetime.datetime.strptime(input_time, "%H:%M").time()
+    scheduled_datetime = datetime.datetime.combine(scheduled_date, scheduled_time)
+    
+    return scheduled_datetime
     
     
 def main():
@@ -196,5 +215,16 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    
+    scheduled_datetime = get_schedule()
+    
+    # Agendar a execução do script na data e hora especificadas pelo usuário
+    schedule.every().day.at(scheduled_datetime.strftime("%H:%M")).do(main)
+    
+    while True:
+        
+        schedule.run_pending()
+        
+        time.sleep(1)
+    
     

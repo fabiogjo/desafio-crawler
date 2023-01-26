@@ -21,7 +21,7 @@ Escolher uma dos sites abaixo para fazer o desafio
 - ~~fazer um dataframe que possibilite visualizar os resultados via pandas~~
 - Trazer resultados de forma dinamica sem fixar caminhos no `xpath`
 - Dockerizar a aplicação
-- Conseguir agendar uma execução para um dia e horario.
+- ~~Conseguir agendar uma execução para um dia e horario.~~
 
 ### Libs sugeridas:
 
