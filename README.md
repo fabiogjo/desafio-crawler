@@ -19,7 +19,7 @@ Escolher uma dos sites abaixo para fazer o desafio
 
 - Armazenamento dos resultados em um banco relacional ou não relacional
 - ~~fazer um dataframe que possibilite visualizar os resultados via pandas~~
-- Trazer resultados de forma dinamica sem fixar caminhos no `xpath`
+- ~~Trazer resultados de forma dinamica sem fixar caminhos no `xpath`~~
 - Dockerizar a aplicação
 - ~~Conseguir agendar uma execução para um dia e horario.~~
 
