@@ -1,0 +1,260 @@
+2023-01-25 22:32:52,325 - INFO - Iniciando execução.
+2023-01-25 22:32:53,380 - INFO - Tentando conexão com URL.
+2023-01-25 22:32:53,381 - INFO - URL conectada com sucesso.
+2023-01-25 22:32:53,765 - INFO - Filme "Um Sonho de Liberdade" cadastrado com sucesso.
+2023-01-25 22:32:53,767 - INFO - Filme "O Poderoso Chefão" cadastrado com sucesso.
+2023-01-25 22:32:53,767 - INFO - Filme "Batman: O Cavaleiro das Trevas" cadastrado com sucesso.
+2023-01-25 22:32:53,767 - INFO - Filme "O Poderoso Chefão II" cadastrado com sucesso.
+2023-01-25 22:32:53,768 - INFO - Filme "12 Homens e uma Sentença" cadastrado com sucesso.
+2023-01-25 22:32:53,768 - INFO - Filme "A Lista de Schindler" cadastrado com sucesso.
+2023-01-25 22:32:53,768 - INFO - Filme "O Senhor dos Anéis: O Retorno do Rei" cadastrado com sucesso.
+2023-01-25 22:32:53,779 - INFO - Filme "Pulp Fiction: Tempo de Violência" cadastrado com sucesso.
+2023-01-25 22:32:53,779 - INFO - Filme "O Senhor dos Anéis: A Sociedade do Anel" cadastrado com sucesso.
+2023-01-25 22:32:53,779 - INFO - Filme "Três Homens em Conflito" cadastrado com sucesso.
+2023-01-25 22:32:53,779 - INFO - Filme "Forrest Gump: O Contador de Histórias" cadastrado com sucesso.
+2023-01-25 22:32:53,779 - INFO - Filme "Clube da Luta" cadastrado com sucesso.
+2023-01-25 22:32:53,780 - INFO - Filme "O Senhor dos Anéis: As Duas Torres" cadastrado com sucesso.
+2023-01-25 22:32:53,780 - INFO - Filme "A Origem" cadastrado com sucesso.
+2023-01-25 22:32:53,780 - INFO - Filme "O Império Contra-Ataca" cadastrado com sucesso.
+2023-01-25 22:32:53,780 - INFO - Filme "Matrix" cadastrado com sucesso.
+2023-01-25 22:32:53,780 - INFO - Filme "Os Bons Companheiros" cadastrado com sucesso.
+2023-01-25 22:32:53,780 - INFO - Filme "Um Estranho no Ninho" cadastrado com sucesso.
+2023-01-25 22:32:53,780 - INFO - Filme "Seven: Os Sete Crimes Capitais" cadastrado com sucesso.
+2023-01-25 22:32:53,780 - INFO - Filme "Os Sete Samurais" cadastrado com sucesso.
+2023-01-25 22:32:53,781 - INFO - Filme "A Felicidade Não se Compra" cadastrado com sucesso.
+2023-01-25 22:32:53,781 - INFO - Filme "O Silêncio dos Inocentes" cadastrado com sucesso.
+2023-01-25 22:32:53,781 - INFO - Filme "Cidade de Deus" cadastrado com sucesso.
+2023-01-25 22:32:53,781 - INFO - Filme "O Resgate do Soldado Ryan" cadastrado com sucesso.
+2023-01-25 22:32:53,781 - INFO - Filme "Interestelar" cadastrado com sucesso.
+2023-01-25 22:32:53,781 - INFO - Filme "A Vida é Bela" cadastrado com sucesso.
+2023-01-25 22:32:53,781 - INFO - Filme "À Espera de um Milagre" cadastrado com sucesso.
+2023-01-25 22:32:53,782 - INFO - Filme "Guerra nas Estrelas" cadastrado com sucesso.
+2023-01-25 22:32:53,782 - INFO - Filme "O Exterminador do Futuro 2 - O Julgamento Final" cadastrado com sucesso.
+2023-01-25 22:32:53,782 - INFO - Filme "De Volta para o Futuro" cadastrado com sucesso.
+2023-01-25 22:32:53,782 - INFO - Filme "A Viagem de Chihiro" cadastrado com sucesso.
+2023-01-25 22:32:53,782 - INFO - Filme "O Pianista" cadastrado com sucesso.
+2023-01-25 22:32:53,783 - INFO - Filme "Psicose" cadastrado com sucesso.
+2023-01-25 22:32:53,783 - INFO - Filme "Parasita" cadastrado com sucesso.
+2023-01-25 22:32:53,783 - INFO - Filme "O Profissional" cadastrado com sucesso.
+2023-01-25 22:32:53,783 - INFO - Filme "O Rei Leão" cadastrado com sucesso.
+2023-01-25 22:32:53,784 - INFO - Filme "Gladiador" cadastrado com sucesso.
+2023-01-25 22:32:53,784 - INFO - Filme "A Outra História Americana" cadastrado com sucesso.
+2023-01-25 22:32:53,784 - INFO - Filme "Os Infiltrados" cadastrado com sucesso.
+2023-01-25 22:32:53,784 - INFO - Filme "Os Suspeitos" cadastrado com sucesso.
+2023-01-25 22:32:53,784 - INFO - Filme "O Grande Truque" cadastrado com sucesso.
+2023-01-25 22:32:53,784 - INFO - Filme "Whiplash: Em Busca da Perfeição" cadastrado com sucesso.
+2023-01-25 22:32:53,785 - INFO - Filme "Casablanca" cadastrado com sucesso.
+2023-01-25 22:32:53,785 - INFO - Filme "Túmulo dos Vagalumes" cadastrado com sucesso.
+2023-01-25 22:32:53,785 - INFO - Filme "Harakiri" cadastrado com sucesso.
+2023-01-25 22:32:53,785 - INFO - Filme "Intocáveis" cadastrado com sucesso.
+2023-01-25 22:32:53,785 - INFO - Filme "Tempos Modernos" cadastrado com sucesso.
+2023-01-25 22:32:53,785 - INFO - Filme "Era uma Vez no Oeste" cadastrado com sucesso.
+2023-01-25 22:32:53,786 - INFO - Filme "Janela Indiscreta" cadastrado com sucesso.
+2023-01-25 22:32:53,786 - INFO - Filme "Cinema Paradiso" cadastrado com sucesso.
+2023-01-25 22:32:53,786 - INFO - Filme "Alien - O 8º Passageiro" cadastrado com sucesso.
+2023-01-25 22:32:53,786 - INFO - Filme "Luzes da Cidade" cadastrado com sucesso.
+2023-01-25 22:32:53,786 - INFO - Filme "Apocalypse Now" cadastrado com sucesso.
+2023-01-25 22:32:53,786 - INFO - Filme "Amnésia" cadastrado com sucesso.
+2023-01-25 22:32:53,786 - INFO - Filme "Django Livre" cadastrado com sucesso.
+2023-01-25 22:32:53,787 - INFO - Filme "Os Caçadores da Arca Perdida" cadastrado com sucesso.
+2023-01-25 22:32:53,787 - INFO - Filme "WALL·E" cadastrado com sucesso.
+2023-01-25 22:32:53,787 - INFO - Filme "A Vida dos Outros" cadastrado com sucesso.
+2023-01-25 22:32:53,787 - INFO - Filme "Crepúsculo dos Deuses" cadastrado com sucesso.
+2023-01-25 22:32:53,787 - INFO - Filme "Glória Feita de Sangue" cadastrado com sucesso.
+2023-01-25 22:32:53,787 - INFO - Filme "O Iluminado" cadastrado com sucesso.
+2023-01-25 22:32:53,787 - INFO - Filme "O Grande Ditador" cadastrado com sucesso.
+2023-01-25 22:32:53,788 - INFO - Filme "Vingadores: Guerra Infinita" cadastrado com sucesso.
+2023-01-25 22:32:53,788 - INFO - Filme "Testemunha de Acusação" cadastrado com sucesso.
+2023-01-25 22:32:53,788 - INFO - Filme "Aliens, O Resgate" cadastrado com sucesso.
+2023-01-25 22:32:53,788 - INFO - Filme "Homem-Aranha: No Aranhaverso" cadastrado com sucesso.
+2023-01-25 22:32:53,788 - INFO - Filme "Beleza Americana" cadastrado com sucesso.
+2023-01-25 22:32:53,788 - INFO - Filme "Dr. Fantástico" cadastrado com sucesso.
+2023-01-25 22:32:53,788 - INFO - Filme "Batman: O Cavaleiro das Trevas Ressurge" cadastrado com sucesso.
+2023-01-25 22:32:53,789 - INFO - Filme "Oldboy" cadastrado com sucesso.
+2023-01-25 22:32:53,789 - INFO - Filme "Bastardos Inglórios" cadastrado com sucesso.
+2023-01-25 22:32:53,789 - INFO - Filme "Amadeus" cadastrado com sucesso.
+2023-01-25 22:32:53,789 - INFO - Filme "Viva: A Vida é uma Festa" cadastrado com sucesso.
+2023-01-25 22:32:53,789 - INFO - Filme "Toy Story" cadastrado com sucesso.
+2023-01-25 22:32:53,789 - INFO - Filme "Coringa" cadastrado com sucesso.
+2023-01-25 22:32:53,790 - INFO - Filme "Coração Valente" cadastrado com sucesso.
+2023-01-25 22:32:53,790 - INFO - Filme "O Barco: Inferno no Mar" cadastrado com sucesso.
+2023-01-25 22:32:53,790 - INFO - Filme "Vingadores: Ultimato" cadastrado com sucesso.
+2023-01-25 22:32:53,791 - INFO - Filme "Princesa Mononoke" cadastrado com sucesso.
+2023-01-25 22:32:53,791 - INFO - Filme "Era uma Vez na América" cadastrado com sucesso.
+2023-01-25 22:32:53,791 - INFO - Filme "Gênio Indomável" cadastrado com sucesso.
+2023-01-25 22:32:53,791 - INFO - Filme "Your Name." cadastrado com sucesso.
+2023-01-25 22:32:53,791 - INFO - Filme "Réquiem para um Sonho" cadastrado com sucesso.
+2023-01-25 22:32:53,791 - INFO - Filme "3 Idiotas" cadastrado com sucesso.
+2023-01-25 22:32:53,792 - INFO - Filme "Cantando na Chuva" cadastrado com sucesso.
+2023-01-25 22:32:53,792 - INFO - Filme "Toy Story 3" cadastrado com sucesso.
+2023-01-25 22:32:53,792 - INFO - Filme "Céu E Inferno" cadastrado com sucesso.
+2023-01-25 22:32:53,792 - INFO - Filme "Cafarnaum" cadastrado com sucesso.
+2023-01-25 22:32:53,792 - INFO - Filme "Star Wars, Episódio VI: O Retorno do Jedi" cadastrado com sucesso.
+2023-01-25 22:32:53,792 - INFO - Filme "Brilho Eterno de uma Mente sem Lembranças" cadastrado com sucesso.
+2023-01-25 22:32:53,792 - INFO - Filme "2001: Uma Odisséia no Espaço" cadastrado com sucesso.
+2023-01-25 22:32:53,793 - INFO - Filme "Cães de Aluguel" cadastrado com sucesso.
+2023-01-25 22:32:53,793 - INFO - Filme "A Caça" cadastrado com sucesso.
+2023-01-25 22:32:53,793 - INFO - Filme "Vá e Veja" cadastrado com sucesso.
+2023-01-25 22:32:53,793 - INFO - Filme "Cidadão Kane" cadastrado com sucesso.
+2023-01-25 22:32:53,793 - INFO - Filme "Lawrence da Arábia" cadastrado com sucesso.
+2023-01-25 22:32:53,794 - INFO - Filme "M, o Vampiro de Dusseldorf" cadastrado com sucesso.
+2023-01-25 22:32:53,794 - INFO - Filme "Top Gun: Maverick" cadastrado com sucesso.
+2023-01-25 22:32:53,794 - INFO - Filme "Intriga Internacional" cadastrado com sucesso.
+2023-01-25 22:32:53,794 - INFO - Filme "Um Corpo que Cai" cadastrado com sucesso.
+2023-01-25 22:32:53,794 - INFO - Filme "O Fabuloso Destino de Amélie Poulain" cadastrado com sucesso.
+2023-01-25 22:32:53,794 - INFO - Filme "Se Meu Apartamento Falasse" cadastrado com sucesso.
+2023-01-25 22:32:53,794 - INFO - Filme "Viver" cadastrado com sucesso.
+2023-01-25 22:32:53,794 - INFO - Filme "Laranja Mecânica" cadastrado com sucesso.
+2023-01-25 22:32:53,795 - INFO - Filme "Pacto de Sangue" cadastrado com sucesso.
+2023-01-25 22:32:53,795 - INFO - Filme "Nascido para Matar" cadastrado com sucesso.
+2023-01-25 22:32:53,795 - INFO - Filme "Scarface" cadastrado com sucesso.
+2023-01-25 22:32:53,796 - INFO - Filme "Hamilton" cadastrado com sucesso.
+2023-01-25 22:32:53,796 - INFO - Filme "Incêndios" cadastrado com sucesso.
+2023-01-25 22:32:53,796 - INFO - Filme "O Sol é para Todos" cadastrado com sucesso.
+2023-01-25 22:32:53,796 - INFO - Filme "Golpe de Mestre" cadastrado com sucesso.
+2023-01-25 22:32:53,796 - INFO - Filme "Fogo Contra Fogo" cadastrado com sucesso.
+2023-01-25 22:32:53,796 - INFO - Filme "Up: Altas Aventuras" cadastrado com sucesso.
+2023-01-25 22:32:53,796 - INFO - Filme "A Separação" cadastrado com sucesso.
+2023-01-25 22:32:53,797 - INFO - Filme "Taxi Driver: Motorista de Táxi" cadastrado com sucesso.
+2023-01-25 22:32:53,797 - INFO - Filme "Metrópolis" cadastrado com sucesso.
+2023-01-25 22:32:53,797 - INFO - Filme "Los Angeles: Cidade Proibida" cadastrado com sucesso.
+2023-01-25 22:32:53,797 - INFO - Filme "Duro de Matar" cadastrado com sucesso.
+2023-01-25 22:32:53,797 - INFO - Filme "Snatch: Porcos e Diamantes" cadastrado com sucesso.
+2023-01-25 22:32:53,797 - INFO - Filme "Indiana Jones e a Última Cruzada" cadastrado com sucesso.
+2023-01-25 22:32:53,797 - INFO - Filme "Ladrões de Bicicletas" cadastrado com sucesso.
+2023-01-25 22:32:53,797 - INFO - Filme "Como Estrelas na Terra" cadastrado com sucesso.
+2023-01-25 22:32:53,798 - INFO - Filme "1917" cadastrado com sucesso.
+2023-01-25 22:32:53,798 - INFO - Filme "A Queda! As Últimas Horas de Hitler" cadastrado com sucesso.
+2023-01-25 22:32:53,798 - INFO - Filme "Por uns Dólares a Mais" cadastrado com sucesso.
+2023-01-25 22:32:53,798 - INFO - Filme "Dangal" cadastrado com sucesso.
+2023-01-25 22:32:53,798 - INFO - Filme "Batman Begins" cadastrado com sucesso.
+2023-01-25 22:32:53,798 - INFO - Filme "O Garoto" cadastrado com sucesso.
+2023-01-25 22:32:53,798 - INFO - Filme "Quanto Mais Quente Melhor" cadastrado com sucesso.
+2023-01-25 22:32:53,799 - INFO - Filme "Meu Pai" cadastrado com sucesso.
+2023-01-25 22:32:53,799 - INFO - Filme "A Malvada" cadastrado com sucesso.
+2023-01-25 22:32:53,799 - INFO - Filme "Green Book: O Guia" cadastrado com sucesso.
+2023-01-25 22:32:53,799 - INFO - Filme "O Lobo de Wall Street" cadastrado com sucesso.
+2023-01-25 22:32:53,799 - INFO - Filme "Julgamento em Nuremberg" cadastrado com sucesso.
+2023-01-25 22:32:53,799 - INFO - Filme "Cassino" cadastrado com sucesso.
+2023-01-25 22:32:53,800 - INFO - Filme "Ran" cadastrado com sucesso.
+2023-01-25 22:32:53,800 - INFO - Filme "O Labirinto do Fauno" cadastrado com sucesso.
+2023-01-25 22:32:53,800 - INFO - Filme "Os Imperdoáveis" cadastrado com sucesso.
+2023-01-25 22:32:53,800 - INFO - Filme "O Show de Truman: O Show da Vida" cadastrado com sucesso.
+2023-01-25 22:32:53,800 - INFO - Filme "Sangue Negro" cadastrado com sucesso.
+2023-01-25 22:32:53,800 - INFO - Filme "O Sexto Sentido" cadastrado com sucesso.
+2023-01-25 22:32:53,801 - INFO - Filme "Uma Mente Brilhante" cadastrado com sucesso.
+2023-01-25 22:32:53,801 - INFO - Filme "Ilha do Medo" cadastrado com sucesso.
+2023-01-25 22:32:53,801 - INFO - Filme "Yojimbo, o Guarda-Costas" cadastrado com sucesso.
+2023-01-25 22:32:53,801 - INFO - Filme "Jurassic Park" cadastrado com sucesso.
+2023-01-25 22:32:53,801 - INFO - Filme "O Tesouro da Sierra Madre" cadastrado com sucesso.
+2023-01-25 22:32:53,801 - INFO - Filme "Monty Python em Busca do Cálice Sagrado" cadastrado com sucesso.
+2023-01-25 22:32:53,802 - INFO - Filme "Homem-Aranha: Sem Volta para Casa" cadastrado com sucesso.
+2023-01-25 22:32:53,802 - INFO - Filme "Fugindo do Inferno" cadastrado com sucesso.
+2023-01-25 22:32:53,802 - INFO - Filme "Onde os Fracos Não Têm Vez" cadastrado com sucesso.
+2023-01-25 22:32:53,802 - INFO - Filme "Rashomon" cadastrado com sucesso.
+2023-01-25 22:32:53,802 - INFO - Filme "Kill Bill: Volume 1" cadastrado com sucesso.
+2023-01-25 22:32:53,802 - INFO - Filme "O Enigma de Outro Mundo" cadastrado com sucesso.
+2023-01-25 22:32:53,802 - INFO - Filme "Procurando Nemo" cadastrado com sucesso.
+2023-01-25 22:32:53,802 - INFO - Filme "O Homem Elefante" cadastrado com sucesso.
+2023-01-25 22:32:53,803 - INFO - Filme "Chinatown" cadastrado com sucesso.
+2023-01-25 22:32:53,803 - INFO - Filme "Touro Indomável" cadastrado com sucesso.
+2023-01-25 22:32:53,803 - INFO - Filme "V de Vingança" cadastrado com sucesso.
+2023-01-25 22:32:53,803 - INFO - Filme "...E o Vento Levou" cadastrado com sucesso.
+2023-01-25 22:32:53,803 - INFO - Filme "Jogos, Trapaças e Dois Canos Fumegantes" cadastrado com sucesso.
+2023-01-25 22:32:53,803 - INFO - Filme "Divertida Mente" cadastrado com sucesso.
+2023-01-25 22:32:53,803 - INFO - Filme "Disque M para Matar" cadastrado com sucesso.
+2023-01-25 22:32:53,804 - INFO - Filme "O Segredo dos Seus Olhos" cadastrado com sucesso.
+2023-01-25 22:32:53,804 - INFO - Filme "O Castelo Animado" cadastrado com sucesso.
+2023-01-25 22:32:53,804 - INFO - Filme "Três Anúncios para um Crime" cadastrado com sucesso.
+2023-01-25 22:32:53,804 - INFO - Filme "A Ponte do Rio Kwai" cadastrado com sucesso.
+2023-01-25 22:32:53,804 - INFO - Filme "Trainspotting: Sem Limites" cadastrado com sucesso.
+2023-01-25 22:32:53,804 - INFO - Filme "Os Suspeitos" cadastrado com sucesso.
+2023-01-25 22:32:53,804 - INFO - Filme "Guerreiro" cadastrado com sucesso.
+2023-01-25 22:32:53,804 - INFO - Filme "Fargo: Uma Comédia de Erros" cadastrado com sucesso.
+2023-01-25 22:32:53,805 - INFO - Filme "Gran Torino" cadastrado com sucesso.
+2023-01-25 22:32:53,805 - INFO - Filme "Meu Amigo Totoro" cadastrado com sucesso.
+2023-01-25 22:32:53,805 - INFO - Filme "Prenda-me se for Capaz" cadastrado com sucesso.
+2023-01-25 22:32:53,805 - INFO - Filme "Menina de Ouro" cadastrado com sucesso.
+2023-01-25 22:32:53,805 - INFO - Filme "Filhos do Paraíso" cadastrado com sucesso.
+2023-01-25 22:32:53,805 - INFO - Filme "Blade Runner: O Caçador de Androides" cadastrado com sucesso.
+2023-01-25 22:32:53,805 - INFO - Filme "Em Busca do Ouro" cadastrado com sucesso.
+2023-01-25 22:32:53,806 - INFO - Filme "Antes do Amanhecer" cadastrado com sucesso.
+2023-01-25 22:32:53,806 - INFO - Filme "12 Anos de Escravidão" cadastrado com sucesso.
+2023-01-25 22:32:53,806 - INFO - Filme "Sindicato de Ladrões" cadastrado com sucesso.
+2023-01-25 22:32:53,806 - INFO - Filme "Harry Potter e as Relíquias da Morte - Parte 2" cadastrado com sucesso.
+2023-01-25 22:32:53,806 - INFO - Filme "Klaus" cadastrado com sucesso.
+2023-01-25 22:32:53,806 - INFO - Filme "Ben-Hur" cadastrado com sucesso.
+2023-01-25 22:32:53,806 - INFO - Filme "Garota Exemplar" cadastrado com sucesso.
+2023-01-25 22:32:53,807 - INFO - Filme "O Grande Hotel Budapeste" cadastrado com sucesso.
+2023-01-25 22:32:53,807 - INFO - Filme "Morangos Silvestres" cadastrado com sucesso.
+2023-01-25 22:32:53,807 - INFO - Filme "A General" cadastrado com sucesso.
+2023-01-25 22:32:53,807 - INFO - Filme "O 3º Homem" cadastrado com sucesso.
+2023-01-25 22:32:53,807 - INFO - Filme "Em Nome do Pai" cadastrado com sucesso.
+2023-01-25 22:32:53,807 - INFO - Filme "O Franco Atirador" cadastrado com sucesso.
+2023-01-25 22:32:53,807 - INFO - Filme "Barry Lyndon" cadastrado com sucesso.
+2023-01-25 22:32:53,808 - INFO - Filme "O Salário do Medo" cadastrado com sucesso.
+2023-01-25 22:32:53,808 - INFO - Filme "Até o Último Homem" cadastrado com sucesso.
+2023-01-25 22:32:53,808 - INFO - Filme "Memórias de um Assassino" cadastrado com sucesso.
+2023-01-25 22:32:53,808 - INFO - Filme "Bancando o Águia" cadastrado com sucesso.
+2023-01-25 22:32:53,808 - INFO - Filme "Relatos Selvagens" cadastrado com sucesso.
+2023-01-25 22:32:53,808 - INFO - Filme "A Mulher Faz o Homem" cadastrado com sucesso.
+2023-01-25 22:32:53,808 - INFO - Filme "Mad Max: Estrada da Fúria" cadastrado com sucesso.
+2023-01-25 22:32:53,809 - INFO - Filme "O Sétimo Selo" cadastrado com sucesso.
+2023-01-25 22:32:53,809 - INFO - Filme "Mary e Max: Uma Amizade Diferente" cadastrado com sucesso.
+2023-01-25 22:32:53,809 - INFO - Filme "O Quarto de Jack" cadastrado com sucesso.
+2023-01-25 22:32:53,809 - INFO - Filme "Como Treinar o Seu Dragão" cadastrado com sucesso.
+2023-01-25 22:32:53,809 - INFO - Filme "Monstros S.A." cadastrado com sucesso.
+2023-01-25 22:32:53,809 - INFO - Filme "Tubarão" cadastrado com sucesso.
+2023-01-25 22:32:53,810 - INFO - Filme "O Grande Lebowski" cadastrado com sucesso.
+2023-01-25 22:32:53,810 - INFO - Filme "Sociedade dos Poetas Mortos" cadastrado com sucesso.
+2023-01-25 22:32:53,810 - INFO - Filme "Era uma Vez em Tóquio" cadastrado com sucesso.
+2023-01-25 22:32:53,810 - INFO - Filme "O Martírio de Joana D'Arc" cadastrado com sucesso.
+2023-01-25 22:32:53,810 - INFO - Filme "Hotel Ruanda" cadastrado com sucesso.
+2023-01-25 22:32:53,810 - INFO - Filme "Ford vs Ferrari" cadastrado com sucesso.
+2023-01-25 22:32:53,810 - INFO - Filme "Rocky: Um Lutador" cadastrado com sucesso.
+2023-01-25 22:32:53,810 - INFO - Filme "Platoon" cadastrado com sucesso.
+2023-01-25 22:32:53,811 - INFO - Filme "Ratatouille" cadastrado com sucesso.
+2023-01-25 22:32:53,811 - INFO - Filme "Spotlight: Segredos Revelados" cadastrado com sucesso.
+2023-01-25 22:32:53,811 - INFO - Filme "O Exterminador do Futuro" cadastrado com sucesso.
+2023-01-25 22:32:53,811 - INFO - Filme "Conta Comigo" cadastrado com sucesso.
+2023-01-25 22:32:53,811 - INFO - Filme "Logan" cadastrado com sucesso.
+2023-01-25 22:32:53,811 - INFO - Filme "Rush: No Limite da Emoção" cadastrado com sucesso.
+2023-01-25 22:32:53,812 - INFO - Filme "Rede de Intrigas" cadastrado com sucesso.
+2023-01-25 22:32:53,812 - INFO - Filme "Na Natureza Selvagem" cadastrado com sucesso.
+2023-01-25 22:32:53,812 - INFO - Filme "Antes do Pôr-do-Sol" cadastrado com sucesso.
+2023-01-25 22:32:53,812 - INFO - Filme "O Mágico de Oz" cadastrado com sucesso.
+2023-01-25 22:32:53,812 - INFO - Filme "A Canção da Estrada" cadastrado com sucesso.
+2023-01-25 22:32:53,812 - INFO - Filme "Feitiço do Tempo" cadastrado com sucesso.
+2023-01-25 22:32:53,812 - INFO - Filme "Os Melhores Anos de Nossa Vida" cadastrado com sucesso.
+2023-01-25 22:32:53,813 - INFO - Filme "O Exorcista" cadastrado com sucesso.
+2023-01-25 22:32:53,813 - INFO - Filme "Os Incríveis" cadastrado com sucesso.
+2023-01-25 22:32:53,813 - INFO - Filme "Ser ou Não Ser" cadastrado com sucesso.
+2023-01-25 22:32:53,813 - INFO - Filme "O Ódio" cadastrado com sucesso.
+2023-01-25 22:32:53,813 - INFO - Filme "A Batalha de Argel" cadastrado com sucesso.
+2023-01-25 22:32:53,813 - INFO - Filme "Sempre ao Seu Lado" cadastrado com sucesso.
+2023-01-25 22:32:53,813 - INFO - Filme "Piratas do Caribe: A Maldição do Pérola Negra" cadastrado com sucesso.
+2023-01-25 22:32:53,814 - INFO - Filme "Meu Pai e Meu Filho" cadastrado com sucesso.
+2023-01-25 22:32:53,814 - INFO - Filme "Jai Bhim" cadastrado com sucesso.
+2023-01-25 22:32:53,814 - INFO - Filme "As Vinhas da Ira" cadastrado com sucesso.
+2023-01-25 22:32:53,814 - INFO - Filme "Amores Brutos" cadastrado com sucesso.
+2023-01-25 22:32:53,814 - INFO - Filme "Rebecca, a Mulher Inesquecível" cadastrado com sucesso.
+2023-01-25 22:32:53,814 - INFO - Filme "Rebeldia Indomável" cadastrado com sucesso.
+2023-01-25 22:32:53,814 - INFO - Filme "A Criada" cadastrado com sucesso.
+2023-01-25 22:32:53,814 - INFO - Filme "Os Incompreendidos" cadastrado com sucesso.
+2023-01-25 22:32:53,815 - INFO - Filme "A Noviça Rebelde" cadastrado com sucesso.
+2023-01-25 22:32:53,815 - INFO - Filme "Aconteceu Naquela Noite" cadastrado com sucesso.
+2023-01-25 22:32:53,815 - INFO - Filme "Quando Duas Mulheres Pecam" cadastrado com sucesso.
+2023-01-25 22:32:53,815 - INFO - Filme "A Vida de Brian" cadastrado com sucesso.
+2023-01-25 22:32:53,815 - INFO - Filme "O Gigante de Ferro" cadastrado com sucesso.
+2023-01-25 22:32:53,815 - INFO - Filme "Histórias Cruzadas" cadastrado com sucesso.
+2023-01-25 22:32:53,815 - INFO - Filme "Aladdin" cadastrado com sucesso.
+2023-01-25 22:32:53,816 - INFO - Filme "Dersu Uzala" cadastrado com sucesso.
+2023-01-25 22:32:53,816 - INFO - Filme "Gandhi" cadastrado com sucesso.
+2023-01-25 22:32:53,816 - INFO - Filme "Dança com Lobos" cadastrado com sucesso.
+2023-01-25 22:32:53,816 - INFO - Todos os dados recebidos!
+2023-01-25 22:32:53,843 - INFO - Arquivo JSON Gerado com sucesso
+2023-01-25 22:32:54,091 - INFO - Arquivo CSV Gerado com sucesso
+2023-01-25 22:32:54,091 - INFO - ====== WebDriver manager ======
+2023-01-25 22:32:54,727 - INFO - Get LATEST chromedriver version for google-chrome 109.0.5414
+2023-01-25 22:32:55,343 - INFO - Driver [C:\Users\User\.wdm\drivers\chromedriver\win32\109.0.5414\chromedriver.exe] found in cache
+2023-01-25 22:33:03,313 - INFO - Execução Completa

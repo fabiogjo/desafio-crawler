@@ -9,7 +9,7 @@ from unidecode import unidecode
 import json
 import logging
 
-logging.basicConfig(level=logging.INFO, encoding='utf-8', filename='logs.log', format="%(asctime)s - %(levelname)s - %(message)s")
+logging.basicConfig(level=logging.INFO, encoding='utf-8', filename='generated_files/logs.log', format="%(asctime)s - %(levelname)s - %(message)s")
 
 
 def setup_browser():
@@ -25,7 +25,7 @@ def setup_browser():
     return browser
 
 def create_json_file(dictionary):
-    with open("movies.json", "w") as outfile:
+    with open("generated_files/json_movies.json", "w") as outfile:
         json.dump(dictionary, outfile, indent = 4)
         
 
@@ -167,8 +167,19 @@ def main():
     print(result)
 
     # Criação do arquivo CSV
-    df.to_csv('movies.csv', index=False)
+    df.to_csv('generated_files/csv_movies.csv', index=False)
     logging.info('Arquivo CSV Gerado com sucesso')
+
+
+    # Prova de consulta
+    browser = setup_browser()
+
+    browser.get(url)
+
+    browser.save_screenshot('generated_files/prova_de_consulta.png')
+
+    browser.quit
+
 
     # Final de execução
     logging.info('Execução Completa')
