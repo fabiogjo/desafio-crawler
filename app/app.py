@@ -54,7 +54,9 @@ def create_json_file(data):
         json.dump(data, outfile, indent = 4)
 
 
-def create_movies_list(data, movies_array):
+def create_movies_list(movies_array):
+    
+    data = list()
     
     for row in movies_array:
             
@@ -128,6 +130,8 @@ def create_movies_list(data, movies_array):
         data.append(movie)
         
         logging.info(f'Filme "{movie_name}" cadastrado com sucesso.')
+        
+    return data
 
 
 def get_screenshot(url, path):
@@ -155,6 +159,8 @@ def get_schedule():
     scheduled_datetime = datetime.datetime.combine(scheduled_date, scheduled_time)
     
     logging.info(f'Agendamento de execução para {scheduled_datetime}')
+    
+    print('agendamento realizado com sucesso!')
     
     return scheduled_datetime
     
@@ -186,8 +192,7 @@ def save_database(data):
         # criando tabela
         cursor.execute("""
             CREATE TABLE movies (
-                id SERIAL PRIMARY KEY,
-                movie_rank INTEGER NOT NULL,
+                movie_rank INTEGER PRIMARY KEY NOT NULL,
                 movie_name VARCHAR(255) NOT NULL,
                 movie_year INTEGER NOT NULL,
                 movie_imdb_rating REAL NOT NULL,
@@ -195,13 +200,16 @@ def save_database(data):
             )
         """)
         
+        # Inserindo dados dos filmes
+        cursor.executemany("INSERT INTO movies (movie_rank, movie_name, movie_year, movie_imdb_rating, movie_img_scr) VALUES (%(movie_rank)s, %(movie_name)s, %(movie_year)s, %(movie_imdb_rating)s, %(movie_img_scr)s)", data)
+    
+        
     else:
         
-        # Excluindo dados da tabela ja existente para a atualização.
-        cursor.execute("DELETE FROM movies")
+        # Atualizando filmes dos rankings.    
+        query = "UPDATE movies SET movie_name = %(movie_name)s, movie_year = %(movie_year)s, movie_imdb_rating = %(movie_imdb_rating)s, movie_img_scr = %(movie_img_scr)s WHERE movie_rank = %(movie_rank)s"     
+        cursor.executemany(query, data)
     
-    # Inserindo dados dos filmes
-    cursor.executemany("INSERT INTO movies (movie_rank, movie_name, movie_year, movie_imdb_rating, movie_img_scr) VALUES (%(movie_rank)s, %(movie_name)s, %(movie_year)s, %(movie_imdb_rating)s, %(movie_img_scr)s)", data)
        
     # Salvando alterações    
     conn.commit()
@@ -218,9 +226,6 @@ def main():
     
     #definindo url
     url = 'https://www.imdb.com/chart/top/?ref_=nv_mv_250'
-    
-    #iniciando lista dos dados
-    data = list()
     
     # acessando a pagina
     r = requests.get(url)
@@ -246,7 +251,12 @@ def main():
     all_movies = table.find_all('tr')
     
     # Gerando lista dos filmes
-    create_movies_list(data, all_movies)
+    data = create_movies_list(all_movies)
+    
+    # Verificando se o numero de filmes esta correto
+    if len(data) >= 250:
+        logging.error('Numero de filmes diferente de 250.')
+        return
     
     # verificando se o lista dos filmes esta vazia
     if not data:
