@@ -17,8 +17,6 @@ import os
 #Configurações logging
 logging.basicConfig(level=logging.INFO, encoding='utf-8', format="%(asctime)s - %(levelname)s - %(message)s")
 
-#Bool para verificar se o programa ja executou.
-executed = False
 
 def setup_browser():
     
@@ -308,13 +306,18 @@ def main():
 
     # Final de execução
     logging.info('Execução Completa')
+    return schedule.CancelJob
     
 
 if __name__ == "__main__":
     
     get_schedule()  
     while True:       
-        schedule.run_pending()     
+        schedule.run_pending()    
+        if not schedule.jobs:
+            break 
         time.sleep(1)
+    
+        
 
             
