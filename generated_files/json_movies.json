@@ -582,17 +582,17 @@
     },
     {
         "movie_rank": "84",
-        "movie_name": "3 Idiotas",
-        "movie_year": "2009",
-        "movie_imdb_rating": "8.3",
-        "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY67_CR1,0,45,67_AL_.jpg"
-    },
-    {
-        "movie_rank": "85",
         "movie_name": "Cantando na Chuva",
         "movie_year": "1952",
         "movie_imdb_rating": "8.3",
         "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BZDRjNGViMjQtOThlMi00MTA3LThkYzQtNzJkYjBkMGE0YzE1XkEyXkFqcGdeQXVyNDYyMDk5MTU@._V1_UY67_CR0,0,45,67_AL_.jpg"
+    },
+    {
+        "movie_rank": "85",
+        "movie_name": "3 Idiotas",
+        "movie_year": "2009",
+        "movie_imdb_rating": "8.3",
+        "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BNTkyOGVjMGEtNmQzZi00NzFlLTlhOWQtODYyMDc2ZGJmYzFhXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY67_CR1,0,45,67_AL_.jpg"
     },
     {
         "movie_rank": "86",
@@ -869,17 +869,17 @@
     },
     {
         "movie_rank": "125",
-        "movie_name": "Por uns D\u00f3lares a Mais",
-        "movie_year": "1965",
-        "movie_imdb_rating": "8.2",
-        "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BMzJlZTNkYjQtMTE1OS00YTJlLTgxNjItYzg4NTllODdkMzBiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX45_CR0,0,45,67_AL_.jpg"
-    },
-    {
-        "movie_rank": "126",
         "movie_name": "Dangal",
         "movie_year": "2016",
         "movie_imdb_rating": "8.2",
         "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BMTQ4MzQzMzM2Nl5BMl5BanBnXkFtZTgwMTQ1NzU3MDI@._V1_UY67_CR1,0,45,67_AL_.jpg"
+    },
+    {
+        "movie_rank": "126",
+        "movie_name": "Por uns D\u00f3lares a Mais",
+        "movie_year": "1965",
+        "movie_imdb_rating": "8.2",
+        "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BMzJlZTNkYjQtMTE1OS00YTJlLTgxNjItYzg4NTllODdkMzBiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_UX45_CR0,0,45,67_AL_.jpg"
     },
     {
         "movie_rank": "127",
@@ -1611,31 +1611,31 @@
     },
     {
         "movie_rank": "231",
-        "movie_name": "Sempre ao Seu Lado",
-        "movie_year": "2009",
-        "movie_imdb_rating": "8.0",
-        "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BNzE4NDg5OWMtMzg3NC00ZDRjLTllMDMtZTRjNWZmNjBmMGZlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY67_CR1,0,45,67_AL_.jpg"
-    },
-    {
-        "movie_rank": "232",
         "movie_name": "Piratas do Caribe: A Maldi\u00e7\u00e3o do P\u00e9rola Negra",
         "movie_year": "2003",
         "movie_imdb_rating": "8.0",
         "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BNGYyZGM5MGMtYTY2Ni00M2Y1LWIzNjQtYWUzM2VlNGVhMDNhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX45_CR0,0,45,67_AL_.jpg"
     },
     {
-        "movie_rank": "233",
-        "movie_name": "Meu Pai e Meu Filho",
-        "movie_year": "2005",
+        "movie_rank": "232",
+        "movie_name": "Sempre ao Seu Lado",
+        "movie_year": "2009",
         "movie_imdb_rating": "8.0",
-        "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BNjAzMzEwYzctNjc1MC00Nzg5LWFmMGItMTgzYmMyNTY2OTQ4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY67_CR0,0,45,67_AL_.jpg"
+        "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BNzE4NDg5OWMtMzg3NC00ZDRjLTllMDMtZTRjNWZmNjBmMGZlXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UY67_CR1,0,45,67_AL_.jpg"
     },
     {
-        "movie_rank": "234",
+        "movie_rank": "233",
         "movie_name": "Jai Bhim",
         "movie_year": "2021",
         "movie_imdb_rating": "8.0",
         "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BOTM0NWFjNGYtNjExMS00ZTZlLWFiYmMtZmU4ZjZkMmMxZTNjXkEyXkFqcGdeQXVyODEyNjEwMDk@._V1_UY67_CR4,0,45,67_AL_.jpg"
+    },
+    {
+        "movie_rank": "234",
+        "movie_name": "Meu Pai e Meu Filho",
+        "movie_year": "2005",
+        "movie_imdb_rating": "8.0",
+        "movie_img_scr": "https://m.media-amazon.com/images/M/MV5BNjAzMzEwYzctNjc1MC00Nzg5LWFmMGItMTgzYmMyNTY2OTQ4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UY67_CR0,0,45,67_AL_.jpg"
     },
     {
         "movie_rank": "235",

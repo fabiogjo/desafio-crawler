@@ -11943,3 +11943,9 @@
 2023-01-26 12:47:04,445 - INFO - Get LATEST chromedriver version for google-chrome 109.0.5414
 2023-01-26 12:47:05,295 - INFO - Driver [C:\Users\fabio\.wdm\drivers\chromedriver\win32\109.0.5414\chromedriver.exe] found in cache
 2023-01-26 12:47:15,802 - INFO - Execução Completa
+2023-01-26 15:53:32,538 - INFO - Agendamento de execução para 2023-01-26 15:54:00
+2023-01-26 15:53:54,914 - INFO - Agendamento de execução para 2023-01-26 15:54:00
+2023-01-26 15:54:37,059 - INFO - Agendamento de execução para 2022-01-26 15:30:00
+2023-01-26 15:55:46,818 - INFO - Agendamento de execução para 2022-12-12 15:30:00
+2023-01-26 15:56:39,378 - INFO - Agendamento de execução para 1212-12-12 15:30:00
+2023-01-26 15:57:21,610 - INFO - Agendamento de execução para 1212-12-12 15:30:00
