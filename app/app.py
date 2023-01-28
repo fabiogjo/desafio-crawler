@@ -15,11 +15,8 @@ import traceback
 
 GENERATED_FILES_PATH = 'generated_files'
 
-
-
 #Configurações logging
 logging.basicConfig(level=logging.INFO, encoding='utf-8', format="%(asctime)s - %(levelname)s - %(message)s", filename=f'{GENERATED_FILES_PATH}/logs.log')
-
 
 def setup_browser():
     
