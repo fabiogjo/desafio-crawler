@@ -1,22 +1,24 @@
 from selenium import webdriver
-from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
-from unidecode import unidecode
 import json
 import logging
 import schedule
 import time
-from datetime import datetime, timedelta
+from datetime import datetime
 import psycopg2
 import os
-import sys
+import traceback
+
+GENERATED_FILES_PATH = 'generated_files'
+
+
 
 #Configurações logging
-logging.basicConfig(level=logging.INFO, encoding='utf-8', format="%(asctime)s - %(levelname)s - %(message)s", filename='generated_files/logs.log')
+logging.basicConfig(level=logging.INFO, encoding='utf-8', format="%(asctime)s - %(levelname)s - %(message)s", filename=f'{GENERATED_FILES_PATH}/logs.log')
 
 
 def setup_browser():
@@ -30,24 +32,18 @@ def setup_browser():
     return browser
 
 
-def create_movies_list(url):
+def get_request(url):
 
     # acessando a pagina
     try:
         r = requests.get(url)
         r.raise_for_status()
-        soup = BeautifulSoup(r.content, 'html.parser')
-        table = soup.find('tbody', {'class': 'lister-list'})
-
-        if not table:
-            raise ValueError('Tabela com a class "Lister-list" não encontrada.')
-        
-        # selecionando todas as linhas da tabela
-        all_movies = table.find_all('tr')
+        return r
 
     # Capturando possiveis erros na conexão com a URL
     except requests.exceptions.HTTPError as errh:
         logging.warning("HTTP Error:",errh)
+        raise errh
     except requests.exceptions.ConnectionError as errc:
         logging.warning("Error Connecting:",errc)
     except requests.exceptions.Timeout as errt:
@@ -55,12 +51,30 @@ def create_movies_list(url):
     except requests.exceptions.RequestException as err:
         logging.warning("OOps: Something Else",err)
 
+
+def get_table_body_rows(content, identifier):
+
+    soup = BeautifulSoup(content, 'html.parser')
+
+    table = soup.find('tbody', identifier)
+
+    if not table:
+        raise ValueError('Tabela não encontrada.')
+        
+    # selecionando todas as linhas da tabela
+    rows = table.find_all('tr')
+
+    return rows
+
+
+def create_movies_list(table_rows):
+
     # Iniciando array para armazenamento dos filmes e posteriormente criação do dataframe
     data = []
 
-    for row in all_movies:
-        movie_data = row.find_all('td')
-        
+    for table_row in table_rows:
+        movie_data = table_row.find_all('td')
+
         # pegando valores da linha
         movie = {
             'movie_rank': movie_data[1].text.strip().split(".")[0],
@@ -102,29 +116,29 @@ def create_dataframe(data):
     if df.empty:
         logging.fatal('DataFrame nao gerado')
         return
-
-    # exibindo DataFrame
-    print(df)
     
     return df
 
 
-def create_json_file(data):
-    # Cria arquivo json e retorna o resultado
-    with open("generated_files/json_movies.json", "w+") as outfile:
+def create_json_file(data, date):
+
+    # Cria arquivo json
+    with open(f"{GENERATED_FILES_PATH}/json_movies_{date}.json", "w+", encoding='utf-8') as outfile:
         json.dump(data, outfile, indent = 4)
+
+        #exibindo o resultado
         outfile.seek(0)
         json_data = json.load(outfile)
-        print(json.dumps(json_data, indent=4))
         logging.info('Arquivo JSON Gerado com sucesso')
+        return json.dumps(json_data, indent=4)
 
 
-def create_csv_file(df):
-    df.to_csv('generated_files/csv_movies.csv', index=False)
+def create_csv_file(df, date):
+    df.to_csv(f'{GENERATED_FILES_PATH}/csv_movies_{date}.csv', index=False)
     logging.info('Arquivo CSV Gerado com sucesso')
 
 
-def get_screenshot(url, path):
+def make_screenshot(url, path):
     
     browser = setup_browser()
     browser.get(url)
@@ -207,16 +221,12 @@ def save_database(data):
                 movie_img_scr VARCHAR(255) NOT NULL
             )
         """)
-        
-        # Inserindo dados dos filmes
-        cursor.executemany("INSERT INTO movies (movie_rank, movie_name, movie_year, movie_imdb_rating, movie_img_scr) VALUES (%(movie_rank)s, %(movie_name)s, %(movie_year)s, %(movie_imdb_rating)s, %(movie_img_scr)s)", data)
-    
-        
     else:
-        
-        # Caso a tabela ja exista apenas atualiza filmes do ranking.    
-        query = "UPDATE movies SET movie_name = %(movie_name)s, movie_year = %(movie_year)s, movie_imdb_rating = %(movie_imdb_rating)s, movie_img_scr = %(movie_img_scr)s WHERE movie_rank = %(movie_rank)s"     
-        cursor.executemany(query, data)
+        cursor.execute("DELETE FROM movies")
+
+
+    # Inserindo dados dos filmes
+    cursor.executemany("INSERT INTO movies (movie_rank, movie_name, movie_year, movie_imdb_rating, movie_img_scr) VALUES (%(movie_rank)s, %(movie_name)s, %(movie_year)s, %(movie_imdb_rating)s, %(movie_img_scr)s)", data)
     
        
     # Salvando alterações    
@@ -230,33 +240,52 @@ def save_database(data):
     
 def main():
     
+    now = datetime.now()
+    start_date = now.strftime("%Y-%m-%d-%H-%M-%S-%f")
+
     logging.info('Iniciando execução.')
     
     #definindo url
     url = 'https://www.imdb.com/chart/top/?ref_=nv_mv_250'
-    
-    # Gerando lista dos filmes
-    data = create_movies_list(url)
-    
-    # Criação do DataFrame com os dados da lista   
-    df = create_dataframe(data)
-    
-    # Criação do arquivo JSON
-    create_json_file(data)
 
-    # Criação do arquivo CSV
-    create_csv_file(df)
+    try:
+        # Acessando URL
+        request = get_request(url)
 
-    # Prova de consulta
-    get_screenshot(url, 'generated_files/prova_de_consulta.png')
-    
-    # Amazenamento de dados no banco de dados utilizado Postgresql
-    save_database(data)
+        # Retorna todas as linhas da tabela
+        table_rows = get_table_body_rows(request.content, {'class': 'lister-list'})
 
-    # Final de execução
-    logging.info('Execução Completa')
-    return schedule.CancelJob
-    
+        # Gerando lista dos filmes
+        data = create_movies_list(table_rows)
+        
+        # Criação do DataFrame com os dados da lista   
+        df = create_dataframe(data)
+        print(df)
+        
+        # Criação do arquivo JSON
+        json_dump = create_json_file(data, start_date)
+        print(json_dump)
+
+        # Criação do arquivo CSV
+        create_csv_file(df, start_date)
+
+        # Prova de consulta
+        make_screenshot(url, f'{GENERATED_FILES_PATH}/prova_de_consulta_{start_date}.png')
+        
+        # Amazenamento de dados no banco de dados utilizado Postgresql
+        save_database(data)
+
+        # Final de execução
+        logging.info('Execução Completa')
+        return schedule.CancelJob
+
+
+    except requests.exceptions.RequestException as err:
+        logging.fatal(f'Request fail! {errh} {type(errh)}')
+    except Exception as errh:
+        traceback.print_exc()
+        logging.fatal(f'Something wrong! {errh} {type(errh)}')
+   
 
 if __name__ == "__main__":
     
@@ -264,9 +293,8 @@ if __name__ == "__main__":
     while True:       
         schedule.run_pending()    
         if not schedule.jobs:
-            break 
+            get_schedule() 
         time.sleep(1)
-    
-        
+
 
             
