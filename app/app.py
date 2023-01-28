@@ -123,7 +123,7 @@ def create_dataframe(data):
 def create_json_file(data, date):
 
     # Cria arquivo json
-    with open(f"{GENERATED_FILES_PATH}/json_movies_{date}.json", "w+", encoding='utf-8') as outfile:
+    with open(f"{GENERATED_FILES_PATH}/json_files/json_movies_{date}.json", "w+", encoding='utf-8') as outfile:
         json.dump(data, outfile, indent = 4)
 
         #exibindo o resultado
@@ -134,7 +134,7 @@ def create_json_file(data, date):
 
 
 def create_csv_file(df, date):
-    df.to_csv(f'{GENERATED_FILES_PATH}/csv_movies_{date}.csv', index=False)
+    df.to_csv(f'{GENERATED_FILES_PATH}/csv_files/csv_movies_{date}.csv', index=False)
     logging.info('Arquivo CSV Gerado com sucesso')
 
 
@@ -270,7 +270,7 @@ def main():
         create_csv_file(df, start_date)
 
         # Prova de consulta
-        make_screenshot(url, f'{GENERATED_FILES_PATH}/prova_de_consulta_{start_date}.png')
+        make_screenshot(url, f'{GENERATED_FILES_PATH}/screenshot_files/prova_de_consulta_{start_date}.png')
         
         # Amazenamento de dados no banco de dados utilizado Postgresql
         save_database(data)
