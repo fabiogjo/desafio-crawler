@@ -30,7 +30,10 @@ A URL escolhida foi esta:
 
 ### Para execução do crawler:
 
-- Será necessario a instalação do Docker na maquina [Windows](https://docs.docker.com/desktop/install/windows-install/) [Linux] (https://docs.docker.com/engine/install/ubuntu/)
+- Será necessario a instalação do Docker na maquina
+
+- [Windows](https://docs.docker.com/desktop/install/windows-install/)
+- [Linux](https://docs.docker.com/engine/install/ubuntu/)
 
 - No seu editor de texto, no terminal digite o comando 'docker-compose run crawler-beemon', este comando irá realizar o build das imagens do postgresql e o script do crawler então irá iniciar os containers posgres1 e desafio-crawler-crawler-beemon para iniciar a execução. Este comando já irá instalar todos os requisitos para o correto funcionamento do sistema.
 
