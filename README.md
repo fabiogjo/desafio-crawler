@@ -39,7 +39,7 @@ A URL escolhida foi esta:
 
 - No inicio da execução serão solicitadas uma data e hora para execução do crawler.
 
-- Durante a execução serão exibidos no terminal o DataFrame gerado e logo após a resposta Json.
+- Durante a execução serão exibidos no terminal ou nos logs do container o DataFrame gerado e logo após a resposta Json.
 
 - No final da execução será solicitada uma nova data e hora para execução do crawler.
 
