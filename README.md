@@ -25,7 +25,7 @@ A URL escolhida foi esta:
 
 - Digite o comando 'pip install -r requirements.txt' para download das bibliotecas necessárias.
 
-- Na pasta raiz do projeto, no terminal digite o comando 'pytest'
+- No seu editor de texto do projeto, no terminal digite o comando 'pytest'
 
 
 ### Para execução do crawler:
