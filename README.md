@@ -21,13 +21,20 @@ A URL escolhida foi esta:
 
 ### Para execução dos testes:
 
+- Digite o comando 'python -m venv venv' para criar uma maquina virtual para o projeto
+
+- Digite o comando 'pip install -r requirements.txt' para download das bibliotecas necessárias.
+
 - Na pasta raiz do projeto, no terminal digite o comando 'pytest'
+
 
 ### Para execução do crawler:
 
-- Dentro raiz do projeto, no terminal digite o comando 'docker-compose run crawler-beemon'
+- Será necessario a instalação do Docker na maquina [Windows](https://docs.docker.com/desktop/install/windows-install/) [Linux] (https://docs.docker.com/engine/install/ubuntu/)
 
-- Após a inicialização dos containers postgres e crawler, digite a data e hora desejada para execução do crawler que será solicitada no terminal.
+- No seu editor de texto, no terminal digite o comando 'docker-compose run crawler-beemon', este comando irá realizar o build das imagens do postgresql e o script do crawler então irá iniciar os containers posgres1 e desafio-crawler-crawler-beemon para iniciar a execução. Este comando já irá instalar todos os requisitos para o correto funcionamento do sistema.
+
+- No inicio da execução serão solicitadas uma data e hora para execução do crawler.
 
 - Durante a execução serão exibidos no terminal o DataFrame gerado e logo após a resposta Json.
 
@@ -38,6 +45,10 @@ A URL escolhida foi esta:
 
 - Todos os arquivos gerados na execução estarão dentro do diretório generated_files/
 
+- Para o download dos arquivos, no seu terminal digite o comando 'docker ls', copie o name do container com a imagem 'desafio-crawler-crawler-beemon' após isso digite o comando 'docker container cp (NAME COPIADO):/app/generated_files .', este comando irá fazer o download da pasta com todos os arquivos gerados para o seu diretório local.
+
+- Os arquivos são gerados com datas mantendo o historico de cada verificação.
+
 - Os logs de todas as execuções são armazenados no arquivo logs.log dentro deste diretorio.
 
 - Dentro deste diretorio e de suas respectivas pastas estarao os arquivos gerados ( json_file, csv_file e prova_de_consulta)
@@ -46,6 +57,6 @@ A URL escolhida foi esta:
 
 - Após digite 'docker exec -it (CONTAINER ID) psql -U postgres -d imdbcrawler'
 
-- Com isso para consultar os dados da tabela movies digite 'SELECT * FROM movies;'
+- Com isso para consultar os dados da tabela movies digite 'SELECT * FROM movies ORDER BY movie_rank;'
 
 
