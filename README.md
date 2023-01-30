@@ -36,7 +36,7 @@ A URL escolhida foi esta:
 
 ### Pós execução do crawler:
 
-- Todos os arquivos gerados na execução estaram dentro do diretório generated_files/
+- Todos os arquivos gerados na execução estarão dentro do diretório generated_files/
 
 - Os logs de todas as execuções são armazenados no arquivo logs.log dentro deste diretorio.
 
